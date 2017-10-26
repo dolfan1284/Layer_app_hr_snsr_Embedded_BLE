@@ -1,0 +1,32 @@
+# 1 "depend_Release_CSR101x_A05/battery_service_db.dbx"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "depend_Release_CSR101x_A05/battery_service_db.dbx"
+# 18 "depend_Release_CSR101x_A05/battery_service_db.dbx"
+# 1 "./battery_uuids.h" 1
+# 19 "depend_Release_CSR101x_A05/battery_service_db.dbx" 2
+# 30 "depend_Release_CSR101x_A05/battery_service_db.dbx"
+primary_service {
+    uuid : 0x180f,
+    name : "BATTERY_SERVICE",
+
+
+
+
+
+
+
+    characteristic {
+        uuid : 0x2a19,
+        name : "BATT_LEVEL",
+        flags : FLAG_IRQ,
+        properties : [read, notify],
+        value : 0x00,
+
+        client_config {
+            flags : FLAG_IRQ,
+            name : "BATT_LEVEL_C_CFG"
+        }
+
+    }
+}
